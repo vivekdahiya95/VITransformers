@@ -169,7 +169,7 @@ def download_data(source:str,
                       destination="pizza_steak_sushi")
     """
     ##setup the data path folder
-    data_path=Path("./data")
+    data_path=Path("../data")
     image_path=data_path/destination
 
     #if the image folder doesn't exist , download and prepare it..

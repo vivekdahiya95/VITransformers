@@ -18,3 +18,7 @@
 -  with zipfile.ZipFile(data_path / target_file, "r") as zip_ref:
             print(f"[INFO] Unzipping {target_file} data...") 
             zip_ref.extractall(image_path)
+
+## get the data
+- read about pin memory 
+- rearrange image dimensions to suit matplotlib [color_channels, height, width] -> [height, width, color_channels]

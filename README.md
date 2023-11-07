@@ -22,3 +22,22 @@
 ## get the data
 - read about pin memory 
 - rearrange image dimensions to suit matplotlib [color_channels, height, width] -> [height, width, color_channels]
+
+## replicating the architecture
+- Patch + Position embeddings
+    - for an image size of 224 and patch size of 16:
+      Input (2D image): (224, 224, 3) -> (height, width, color channels)
+      Output (flattened 2D patches): (196, 768) -> (number of patches, embedding dimension)
+- Linear projection of flattened pathches
+- Norm
+- Multi head attention
+- MLP
+- Transformer Encoder
+- MLP head
+
+
+
+
+
+
+
